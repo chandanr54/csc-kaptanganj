@@ -3,7 +3,7 @@ import { services } from "../data/services";
 import ServiceCard from "../components/ServiceCard";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-import defaultImg from "../assets/default.png";
+
 
 const Home = () => {
   // ✨ Typewriter Effect
@@ -89,9 +89,9 @@ const Home = () => {
           onMouseLeave={() => setRotate({ x: 0, y: 0 })}
         >
           <motion.img
-            src={defaultImg}
+            src="/default.png"
             alt="Owner"
-            onError={(e) => (e.target.src = "/default-user.png")}
+            
             style={{
               transform: `rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`
             }}
@@ -176,7 +176,7 @@ const EmployeeSection = () => {
           >
             <img
               src={emp.img}
-              onError={(e) => (e.target.src = "/default-user.png")}
+              
               className="w-28 h-28 mx-auto rounded-full object-cover mb-4 border-4 border-blue-500"
             />
 

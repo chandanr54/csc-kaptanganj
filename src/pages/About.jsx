@@ -56,8 +56,9 @@ const About = () => {
     className="flex justify-center"
   >
     <motion.img
-      src="/owner.jpg"
-      onError={(e) => (e.target.src = "/default.png")}
+        src="/owner.jpg"
+      alt="Owner"
+     
       className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500 shadow-xl"
       animate={{ y: [0, -10, 0] }}
       transition={{
